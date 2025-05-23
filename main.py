@@ -99,7 +99,7 @@ def main(message):
 ◆ 𝑩𝒀: @xosold
 ◆𝑷𝑹𝑶𝑿𝒀𝑺: 𝑷𝑹𝑶𝑿𝒀 𝑳𝑰𝑽𝑬 ✅ '''
         print(last)
-        if 'success' in last or 'redirect' in last or 'Thank you for your message.' in last or 'subscriberId' in last :
+        if 'success' in last or 'cardBrand' in last or 'Thank you for your message.' in last or 'subscriberId' in last :
           live += 1
           bot.reply_to(message, msg)
         elif 'security code is incorrect' in last or 'security code is invalid' in last:

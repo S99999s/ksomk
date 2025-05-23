@@ -17,10 +17,10 @@ def Tele(ccx):
   url = "https://api.stripe.com/v1/payment_methods"
 
   payload = {
-  'card[cvc]': "513",
-  'card[exp_month]': "01",
-  'card[exp_year]': "27",
-  'card[number]': "5218702285726848",
+  'card[cvc]': cvc,
+  'card[exp_month]': mm,
+  'card[exp_year]': yy,
+  'card[number]': n,
   'payment_user_agent': "stripe-ios/23.15.0; variant.legacy; STPPaymentCardTextField",
   'type': "card"
 }

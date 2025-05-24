@@ -4,10 +4,14 @@ import random
 from telebot import types
 from Demon import Tele
 import os
+import os, http.server, socketserver
 token ='8119172422:AAFEC4_ZBGHd3k3YH6aE4Lim1u96BUfkLWI'
 bot=telebot.TeleBot(token,parse_mode="HTML")
 subscriber = '6832492482'
-SLEEP_TIME = random.uniform(1, 20)
+SLEEP_TIME = random.uniform(20,40)
+PORT = int(os.getenv("PORT", 8000))
+Handler = http.server.SimpleHTTPRequestHandler
+socketserver.TCPServer(("", PORT), Handler).serve_forever()
 @bot.message_handler(commands=["start"])
 def start(message):
   if not str(message.chat.id) == '6832492482':

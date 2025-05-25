@@ -72,4 +72,5 @@ def Tele(ccx):
   }
 
   r2 = requests.put(url, data=json.dumps(payload), headers=headers)
+  print(r2.json())
   return (r2.json())

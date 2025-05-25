@@ -4,7 +4,6 @@ import random
 from telebot import types
 from Demon import Tele
 import os
-port = int(os.environ.get("PORT", 5000))
 token ='8120969680:AAFBKpokM4UoTKR5P-r7vkf_haCJAlvNvzc'
 bot=telebot.TeleBot(token,parse_mode="HTML")
 subscriber = '6832492482'

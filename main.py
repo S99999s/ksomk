@@ -4,7 +4,10 @@ import random
 from telebot import types
 from Demon import Tele
 import os
-import os, http.server, socketserver
+import server
+
+if __name__ == "__main__":
+    server.start()
 token ='8119172422:AAFEC4_ZBGHd3k3YH6aE4Lim1u96BUfkLWI'
 bot=telebot.TeleBot(token,parse_mode="HTML")
 subscriber = '6832492482'
